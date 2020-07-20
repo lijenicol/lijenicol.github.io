@@ -29,6 +29,22 @@ body {
 	background-image: url("images/portrait.jpg");
 	background-position: center;
 	background-size: cover;
+	color: white;
+	font-family: helvetica;
+	font-weight: bold;
+	position: relative;
+}
+
+#self-portrait p {
+	position: absolute;
+	bottom: 5px;
+	margin-bottom: 0;
+	//transform: translate(-50%,0) rotate(-90deg) translate(50%,50%);
+	left: 5px;
+}
+
+#self-portrait a {
+	color: white;
 }
 
 .exclude {

@@ -13,7 +13,7 @@ var projectOptions = {
     easing : 'cubic-bezier(.26,.39,.24,.98)'
 };
 
-ScrollReveal().reveal('.project', projectOptions);
+
 
 
 //Sets the reveal of the photos
@@ -22,7 +22,7 @@ var photosReveal = {
 	distance : '50px'
 };
 
-ScrollReveal().reveal('#photo-collage', photosReveal);
+
 
 //Sets the reveal of the call to action
 var callReveal = {
@@ -31,7 +31,12 @@ var callReveal = {
 	reset : true
 }
 
-ScrollReveal().reveal('#contact-info', callReveal);
+//Only it scroll reveal when full window has loaded
+window.addEventListener('load', () => {
+    ScrollReveal().reveal('.project', projectOptions);
+    ScrollReveal().reveal('#photo-collage', photosReveal);
+    ScrollReveal().reveal('#contact-info', callReveal);
+});
 
 //Important function to reset the reveals to get correct layout
 window.addEventListener("resize", resetReveals);
