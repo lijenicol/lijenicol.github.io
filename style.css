@@ -3,6 +3,20 @@
 	src: url("fonts/Butler/Butler_Medium.otf");
 }
 
+@font-face {
+	font-family: montreal-medium;
+	src: url("fonts/NeueMontreal/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+	font-family: montreal-bold;
+	src: url("fonts/NeueMontreal/NeueMontreal-Bold.otf");
+}
+
+.white {
+	color: white;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -71,8 +85,7 @@ body {
 .title h1 {
 	padding: 0;
 	margin:0;
-	font-family: helvetica;
-	letter-spacing: -5px;
+	font-family: montreal-medium;
 }
 
 .blurb {
@@ -115,42 +128,34 @@ body {
 }
 
 .primary-text {
-	font-family: helvetica;
-	font-weight: bold;
+	font-family: montreal-bold;
 	font-size: 50px;
 	text-indent: 30px;
 	padding: 0;
 	margin: 0;	
-	letter-spacing: -0.8px;
 }
 
 .secondary-text {
-	font-family: butler;
+	font-family: montreal-medium;
 	text-align: justify;
 	text-indent: 30px;
-	line-height: 37px;
-	font-size: 39px;
-	padding: 0;
-	margin: 0;
-	letter-spacing: -1px;
+	font-size: 30px;
 }
 
 .secondary-text-hel {
 	font-family: helvetica;
 	text-align: justify;
 	text-indent: 30px;
-	line-height: 37px;
 	font-size: 33px;
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
-	letter-spacing: -0.7px;
 }
 
 #projects-title {
 	text-align: center;
 	position: relative;
-	top: -0.6em;
+	top: -0.65em;
 	mix-blend-mode: difference;
 	font-size: 60px;
 }
@@ -181,9 +186,8 @@ body {
 	right: 0;
 	top: 0;
 	width: 40%;
-	font-size: 30px;
-	font-family: butler;
-	letter-spacing: -1px;
+	font-size: 28px;
+	font-family: montreal-medium;
 	height: 100%;
 }
 
@@ -270,6 +274,38 @@ body {
 	margin-right: 20px;
 }
 
+.project-page {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 60%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.project-page a {
+	position: absolute;
+	left: 0;
+	text-decoration: none;
+}
+
+.project-page figure {
+	text-align: center;
+	font-family: montreal-medium;
+}
+
+.project-page figcaption {
+	margin: 5px 0 5px 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-family: montreal-bold;
+}
+
 @media screen and (max-width: 1850px) {
 	.title {
 		font-size: 40px;
@@ -280,8 +316,7 @@ body {
 	}
 
 	.secondary-text {
-		font-size: 35px;
-		line-height: 37px;
+		font-size: 25px;
 	}
 
 	#projects-title {
@@ -329,10 +364,9 @@ body {
 	}
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1330px) {
 	.title {
-		font-size: 30px;
-		letter-spacing: -1px;
+		font-size: 25px;
 	}	
 	#self-portrait {
 		width: 100%;
@@ -357,8 +391,7 @@ body {
 	}
 
 	.secondary-text {
-		font-size: 35px;
-		line-height: 37px;
+		font-size: 25px;
 	}
 
 	#staples {
@@ -417,12 +450,15 @@ body {
 		position: relative;
 		width: 70%;
 	}
+
+	.project-page img {
+		width: 400px;
+	}
 }
 
 @media screen and (max-width: 900px) {
 	.title {
-		font-size: 25px;
-		letter-spacing: -1px;
+		font-size: 20px;
 	}	
 	#self-portrait {
 		width: 100%;
@@ -450,8 +486,7 @@ body {
 	}
 
 	.secondary-text {
-		font-size: 25px;
-		line-height: 37px;
+		font-size: 20px;
 	}
 
 	#staples {
@@ -512,16 +547,16 @@ body {
 		position: relative;
 		width: 70%;
 	}
+
+	.project-page img {
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 700px) {
 	.title {
-		font-size: 20px;
+		font-size: 17px;
 	}
-
-	.title h1 {
-		letter-spacing: -3px;
-	}	
 
 	.project iframe {
 		position: relative;
