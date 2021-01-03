@@ -186,7 +186,7 @@ body {
 	right: 0;
 	top: 0;
 	width: 40%;
-	font-size: 28px;
+	font-size: 24px;
 	font-family: montreal-medium;
 	height: 100%;
 }
@@ -215,7 +215,7 @@ body {
 .project-links a {
 	margin-right: 20px;
 	color: white;
-	text-decoration: none;
+	
 }
 
 .photo-folio {
@@ -285,7 +285,7 @@ body {
 
 .project-page a {
 	position: absolute;
-	left: 0;
+	left: -17%;
 	text-decoration: none;
 }
 
@@ -328,7 +328,7 @@ body {
 	}
 
 	.project-info {
-		font-size: 29px;
+		font-size: 24px;
 	}
 
 	.project-links {
@@ -342,7 +342,7 @@ body {
 	}
 
 	.project-info {
-		font-size: 26px;
+		font-size: 20px;
 	}
 
 	.project-links {
@@ -356,7 +356,7 @@ body {
 	}
 
 	.project-info {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.project-links {
@@ -428,13 +428,13 @@ body {
 		top: 5px;
 		width: 100%;
 		height: auto;
-		font-size: 35px;
+		font-size: 20px;
 		margin-bottom: 10px;
 	}
 
 	.project-links {
 		position: relative;
-		font-size: 35px;
+		
 		top: 10px;
 	}
 
