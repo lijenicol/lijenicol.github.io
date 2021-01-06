@@ -110,7 +110,7 @@ body {
 	position: absolute;
 	top:50%;
 	left: 62.5%;
-	width:33vw;
+	height: 65vh;
 	transform: translate(0, -50%);
 }
 
@@ -186,7 +186,7 @@ body {
 	right: 0;
 	top: 0;
 	width: 40%;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: montreal-medium;
 	height: 100%;
 }
@@ -328,7 +328,7 @@ body {
 	}
 
 	.project-info {
-		font-size: 24px;
+		font-size: 18px;
 	}
 
 	.project-links {
@@ -342,7 +342,7 @@ body {
 	}
 
 	.project-info {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.project-links {
@@ -356,7 +356,7 @@ body {
 	}
 
 	.project-info {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.project-links {

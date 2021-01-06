@@ -63,9 +63,9 @@
 			<img src="images/world1.png">
 			<div class="project-info">
 				<p class="project-title">Untitled Ray Tracer.</p>
-				<p>This is a personal ray tracer I built based upon the book "Ray Tracing in One Weekend". Since creating the base ray tracer from the book,
+				<p>This is a personal ray tracer I built in C++ based upon the book "Ray Tracing in One Weekend". Since creating the base ray tracer from the book,
 					I have extended its functionality so that I can experiment with different rendering methods and features. The ray tracer currently supports
-					basic geometry (such as disks, spheres, rectangles), image texturing, environment based lighting and basic diffuse/transparent materials.
+					basic geometry (such as disks, spheres, rectangles), image texturing, environment mapping and basic diffuse/transparent materials.
 					I plan to turn this ray tracer into a full physically based renderer in the future, taking inspiration from the book "Physically Based Rendering".
 				</p>
 				<div class="project-links">
@@ -89,7 +89,8 @@
 			<img src="images/eprofolio-create.PNG">
 			<div class="project-info">
 				<p class="project-title">eProfolio.</p>
-				<p>eProfolio is a platform that enables users to create their own ePortfolios and share their
+				<p>This project was handpicked to present at the University of Melbourne 2020 CIS seminar. 
+					eProfolio is a platform that enables users to create their own ePortfolios and share their
 					work with others. It is a web app that was created as part of a group project for the 
 					capstone CS subject at unimelb. I played a vital part in my team, being the main designer 
 					and frontend developer. For more information on the dev process, <a class="white" href="/eprofolio.html">read here</a>.
@@ -101,22 +102,29 @@
 			</div>
 		</div>
 		<div class="project">
+			<iframe src="https://www.youtube.com/embed/FRoIgCHV93U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="project-info">
+				<p class="project-title">SPH Fluid Simulator.</p>
+				<p>This project is an implementation of SPH simulation in C++. I have a love/hate relationship with this project -
+					I was first tasked to complete it as a final assignment to a Computer Animation class, however I could not seem
+					to get the physics right. After many nights spent trying to debug the problem, I handed it in incomplete, leaving me 
+					dissapointed. 8 months later I was determined to get it right and it only took me one hour to find a solution to my problem 
+					- I only had to remove one direction vector from the viscosity calculations and it fixed everything. After this fix,
+					I implemented spatial hashing to speed up neighbourhood search, and set up instanced rendering to reduce rendering bottlenecks.
+					The system is capable of simulating ~3000 particles in real time before it starts to drop below 25fps.
+				</p>
+				<div class="project-links">
+					<a href="https://github.com/lijenicol/SPH-Fluid-Simulator" target="_blank">> Github</a>
+				</div>
+			</div>
+		</div>
+		<div class="project">
 			<img src="images/ct-gif.gif">
 			<div class="project-info">
 				<p class="project-title">Cloth Toy.</p>
 				<p>Cloth Toy is an interactive application that allows the user to move a piece of cloth around the scene through direct control of individual vertices or by controlling the "wind". The cloth itself is made up of a collection of interconnected springs which give the illusion of an elastic material. All physics and rendering were programmed myself in C++ and OpenGL.</p>
 				<div class="project-links">
 					<a href="https://github.com/lijenicol/Cloth-Toy" target="_blank">> Github</a>
-				</div>
-			</div>
-		</div>
-		<div class="project">
-			<img src="images/sph-gif.gif">
-			<div class="project-info">
-				<p class="project-title">SPH Fluid Simulator.</p>
-				<p>This project is built upon the Navier Stokes equations and various different academic papers published over the years. It was a challenging project to put together as making minor changes to any variable can vary the results drastically, making it difficult to debug. However, with some tweaking, the user can create different fluids with reasonable stability.</p>
-				<div class="project-links">
-					<a href="https://github.com/lijenicol/SPH-Fluid-Simulator" target="_blank">> Github</a>
 				</div>
 			</div>
 		</div>
